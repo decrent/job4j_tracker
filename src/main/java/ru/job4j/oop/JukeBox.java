@@ -1,4 +1,4 @@
-package ru.job.oop;
+package ru.job4j.oop;
 
 public class JukeBox {
     public void music(int position) {
