@@ -3,12 +3,11 @@ package ru.job4j.personal;
 import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
-
 public class BurgerStoreTest {
 
     @Test
     public void addClient() {
-        Client petrusha = new Client("Petya",88000);
+        Client petrusha = new Client("Petya", 88000);
         BurgerStore.addClient(petrusha);
         String result = petrusha.getName();
         String expect = "Petya";
@@ -17,7 +16,7 @@ public class BurgerStoreTest {
 
     @Test
     public void add2Clients() {
-        Client petrusha = new Client("Petya",88000);
+        Client petrusha = new Client("Petya", 88000);
         Client cursed = new Client("Fedor", 5553535);
         new BurgerStore().addClient(petrusha);
         new BurgerStore().addClient(cursed);

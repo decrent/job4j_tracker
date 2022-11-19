@@ -12,7 +12,7 @@ public class Computer {
         this.cpu = cpu;
     }
 
-    public Computer(){
+    public Computer() {
 
     }
 
