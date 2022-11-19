@@ -8,7 +8,6 @@ public class BurgerStore {
         clients[clientCount] = client;
         clientCount++;
         BurgerStore testStatic = new BurgerStore();
-        testStatic.clientCount = 10;
     }
 
     public Client[] getClients() {
