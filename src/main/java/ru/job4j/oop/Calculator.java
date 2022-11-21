@@ -22,19 +22,17 @@ public class Calculator {
         return x * a;
     }
 
-    public int sumAllOperation() {
-        int rsl = sum(10) + minus(10) + devide(10) + multiply(4);
+    public int sumAllOperation(int s) {
+        int rsl = sum(s) + minus(s) + devide(s) + multiply(s);
         return rsl;
     }
 
     public static void main(String[] args) {
         Calculator calc = new Calculator();
-        Calculator devide = new Calculator();
-        Calculator multiply = new Calculator();
-        System.out.println(sum(10));
-        System.out.println(minus(10));
-        System.out.println(calc.devide(10));
-        System.out.println(calc.multiply(4));
-        System.out.println(calc.sumAllOperation());
+        calc.multiply(10);
+        calc.devide(10);
+        calc.sumAllOperation(10);
+        sum(10);
+        minus(10);
     }
 }
