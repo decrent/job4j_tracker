@@ -23,16 +23,15 @@ public class Calculator {
     }
 
     public int sumAllOperation(int s) {
-        int rsl = sum(s) + minus(s) + devide(s) + multiply(s);
-        return rsl;
+        return sum(s) + minus(s) + devide(s) + multiply(s);
     }
 
     public static void main(String[] args) {
         Calculator calc = new Calculator();
-        calc.multiply(10);
-        calc.devide(10);
-        calc.sumAllOperation(10);
-        sum(10);
-        minus(10);
+        System.out.println("Результат умножения " + calc.multiply(10));
+        System.out.println("Результат деления " + calc.devide(10));
+        System.out.println("Результат сложения  " + sum(10));
+        System.out.println("Разница " + minus(10));
+        System.out.println("Сумма всех операций " + calc.sumAllOperation(10));
     }
 }
